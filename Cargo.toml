@@ -3,10 +3,8 @@ name = "pilot-os"
 version = "0.1.0"
 edition = "2021"
 
-[build]
-build-std = ["core", "compiler_builtins"]
-
-# Disable Stack Unwinding when panic is triggered. Implement Custom Unwinding L$
+# Disable Stack Unwinding when panic is triggered. Implement Custom Unwinding Later
+# This is Reduntant after adding panic-strategy in i686-pilot-os.json
 [profile.dev]
 panic = "abort"
 
